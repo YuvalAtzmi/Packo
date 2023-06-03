@@ -53,6 +53,10 @@ VALUES(SQL.USER, :ZYUV_IV) ;
 /*****/
 EXECUTE WINHTML '-d', 'ZTAN_EWWWSHOWCIV', '', '', '-v', :ZYUV_IV, '-s', 
 '-edoc', '-pdf', :ZYUV_FILENAME,'-format',-12; 
+/*
+XECUTE WINHTML '-d', 'ZTAN_EWWWSHOWCIV', '', '', '-v', :ZYUV_IV, '-s', 
+'-signpdf', '-pdf', :ZYUV_FILENAME,'-format',-12; 
+*/
 /*****/
 :ZYUV_ORDMAIL = '' ;
 SELECT SQL.TMPFILE INTO :ZYUV_ORDMAIL FROM DUMMY ;
